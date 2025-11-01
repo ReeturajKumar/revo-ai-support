@@ -1,9 +1,5 @@
-import { SignIn } from "@clerk/nextjs";
+import { SignInView } from "@/modules/auth/ui/views/sign-in-view";
 
 export default function SignInPage() {
-  return (
-    <div className="flex flex-col items-center gap-4">
-      <SignIn />
-    </div>
-  );
+  return <SignInView />;
 }
